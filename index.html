@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Miraculous77</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html"><b>77</b><span>Miraculous</span></a>
+  <nav>
+    <a href="#home">خانه</a><a href="#episodes">قسمت‌ها</a><a href="#latest">جدیدترین‌ها</a><a href="#upcoming">قسمت‌های آینده</a><a href="#news">اخبار</a><a href="#about">درباره سریال</a>
+  </nav>
+  <div class="header-actions"><button id="langBtn" class="icon-btn" title="تغییر زبان">EN</button><button class="menu" aria-label="منو">☰</button></div>
+</header>
+<main id="home">
+<section class="hero"><div><small>MIRACULOUS77</small><h1>دنیای میراکلس،<br><em>یک‌جا و مرتب.</em></h1><p>قسمت‌ها، اخبار و ویژه‌های مجموعه را در یک تجربه سریع و منظم دنبال کن.</p><div><a class="btn red" href="#episodes">مشاهده قسمت‌ها</a><a class="btn dark" href="#latest">جدیدترین‌ها</a></div></div><div class="hero-art"><strong>77</strong><span>Miraculous77</span></div></section>
+
+<section id="latest" class="section"><div class="section-head"><div><small>LATEST</small><h2>جدیدترین قسمت‌ها</h2></div><a href="#episodes">همه قسمت‌ها ←</a></div><div id="latestGrid" class="grid"></div></section>
+
+<section id="upcoming" class="section"><div class="section-head"><div><small>UPCOMING</small><h2>قسمت‌های آینده</h2></div></div><div id="upcomingGrid" class="grid"></div></section>
+
+<section id="episodes" class="section"><small>EPISODES</small><h2>آرشیو قسمت‌ها</h2>
+  <div class="filters">
+    <button class="filter active" data-season="all">همه</button><button class="filter" data-season="7">فصل ۷</button><button class="filter" data-season="6">فصل ۶</button><button class="filter" data-season="5">فصل ۵</button>
+    <select id="languageFilter"><option value="all">همه زبان‌ها</option><option value="fa">دوبله فارسی</option><option value="sub">زیرنویس فارسی</option><option value="fr">فرانسوی</option><option value="en">انگلیسی</option></select>
+    <input id="search" placeholder="جستجوی قسمت، فصل یا عنوان..." aria-label="جستجو">
+  </div><div id="episodeGrid" class="grid"></div><p id="emptyState" class="empty" hidden>قسمتی با این مشخصات پیدا نشد.</p>
+</section>
+
+<section class="section two-col"><div><small>FAVORITES</small><h2>علاقه‌مندی‌ها</h2><div id="favoritesGrid" class="grid compact"></div><p id="favoriteEmpty" class="empty">هنوز قسمتی به علاقه‌مندی‌ها اضافه نکرده‌ای.</p></div><div><small>HISTORY</small><h2>ادامه تماشا</h2><div id="historyGrid" class="grid compact"></div><p id="historyEmpty" class="empty">هنوز قسمتی تماشا نشده.</p></div></section>
+
+<section id="news" class="section split"><div><small>NEWS</small><h2>آخرین اخبار</h2><div id="newsList"></div></div><aside id="about" class="special"><small>THE SHOW</small><h2>درباره میراکلس</h2><p>در این بخش می‌توان معرفی سریال، شخصیت‌ها، فصل‌ها و اطلاعات تکمیلی را قرار داد.</p></aside></section>
+</main>
+<footer><span>Miraculous77</span><span>© 2026</span></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
