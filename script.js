@@ -1,9 +1,0 @@
-const $=s=>document.querySelector(s);
-function card(e){return `<a class="card" href="episode.html?id=${e.id}"><div class="poster"><img src="${e.poster}" alt=""><b>${String(e.episode).padStart(2,"0")}</b></div><div><small>فصل ${e.season} • قسمت ${e.episode}</small><h3>${e.title}</h3><span>جزئیات ←</span></div></a>`}
-function render(list=EPISODES){const g=$("#episodeGrid");if(g)g.innerHTML=list.map(card).join("")}
-function news(){const n=$("#newsList");if(n)n.innerHTML=NEWS.map((x,i)=>`<article class="news"><b>0${i+1}</b><div><h3>${x.title}</h3><p>${x.text}</p></div></article>`).join("")}
-function page(){const box=$("#episodePage");if(!box)return;const id=new URLSearchParams(location.search).get("id"),e=EPISODES.find(x=>x.id===id)||EPISODES[0];box.innerHTML=`<a class="back" href="index.html#episodes">← بازگشت</a><div class="episode"><div class="big-poster"><img src="${e.poster}" alt=""></div><div><small>فصل ${e.season} • قسمت ${e.episode}</small><h1>${e.title}</h1><p>${e.summary}</p><h2>پخش آنلاین</h2>${e.watch?`<a class="btn red" href="${e.watch}" target="_blank">▶ پخش</a>`:"<span class='disabled'>لینک پخش اضافه نشده</span>"}<h2>دانلود</h2>${Object.entries(e.downloads).map(([q,u])=>u?`<a class="btn dark" href="${u}" target="_blank">⬇ ${q}p</a>`:`<span class='disabled'>${q}p — لینک اضافه نشده</span>`).join("")}</div></div>`}
-render();news();page();
-document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");const s=b.dataset.season;render(s==="all"?EPISODES:EPISODES.filter(e=>String(e.season)===s))});
-$("#search")?.addEventListener("input",e=>{const q=e.target.value.toLowerCase();render(EPISODES.filter(x=>(x.title+" "+x.season+" "+x.episode).toLowerCase().includes(q)))});
-document.querySelector(".menu")?.addEventListener("click",()=>document.querySelector("nav")?.classList.toggle("open"));
