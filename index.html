@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff"><title>Miraculous77 | میراکلس</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announce"><div class="container announce-inner"><span>🐞 اخبار و قسمت‌های جدید میراکلس را از دست نده!</span><a href="#news">مشاهده اخبار</a><button id="closeAnnounce" aria-label="بستن">×</button></div></div>
+<header class="site-header">
+ <div class="container nav-wrap">
+  <a class="brand" href="index.html" aria-label="Miraculous77"><span class="brand-mark">77</span><span class="brand-text">MIRACULOUS<span>77</span></span></a>
+  <nav class="main-nav" id="mainNav">
+   <a class="active" href="#home">خانه</a><a href="#episodes">قسمت‌ها</a><a href="#show">سریال</a><a href="#news">اخبار</a>
+  </nav>
+  <div class="nav-actions">
+   <button class="round-btn" id="searchBtn" aria-label="جستجو">⌕</button>
+   <button class="round-btn" id="themeBtn" aria-label="تغییر حالت">☾</button>
+   <button class="lang-btn" id="langBtn">EN</button>
+   <button class="hamburger" id="menuBtn" aria-label="منو"><i></i><i></i><i></i></button>
+  </div>
+ </div>
+</header>
+<div class="search-panel" id="searchPanel"><div class="container search-inner"><label for="globalSearch">جستجوی قسمت‌ها</label><div class="search-box"><span>⌕</span><input id="globalSearch" placeholder="عنوان، فصل یا شماره قسمت را وارد کنید..." autocomplete="off"><button id="closeSearch">×</button></div></div></div>
+<main id="home">
+<section class="hero container">
+ <div class="hero-copy"><span class="eyebrow">MIRACULOUS77</span><h1>دنیای میراکلس،<br><strong>همین‌جا.</strong></h1><p>قسمت‌ها، اخبار و اطلاعات سریال میراکلس را در یک آرشیو مرتب و سریع دنبال کن.</p><div class="hero-actions"><a class="primary-btn" href="#episodes">مشاهده قسمت‌ها <span>←</span></a><a class="text-btn" href="#show">درباره سریال</a></div><div class="hero-meta"><span>● آرشیو قسمت‌ها</span><span>● دوبله و زیرنویس</span><span>● به‌روزرسانی منظم</span></div></div>
+ <div class="hero-visual"><div class="hero-placeholder"><span>تصویر اصلی سایت</span><small>بعداً با تصویر ارسالی شما جایگزین می‌شود</small></div></div>
+</section>
+<section class="container section continue" id="continueSection"><div class="section-title"><div><span class="eyebrow">CONTINUE WATCHING</span><h2>ادامه تماشا</h2></div><button class="plain-btn" id="clearHistory">پاک کردن تاریخچه</button></div><div id="historyGrid" class="episode-grid"></div><p id="historyEmpty" class="muted-empty">هنوز قسمتی را باز نکرده‌ای.</p></section>
+<section class="container section" id="upcoming"><div class="section-title"><div><span class="eyebrow">UPCOMING EPISODES</span><h2>قسمت‌های آینده</h2></div><a class="plain-btn" href="#episodes">آرشیو قسمت‌ها ←</a></div><div id="upcomingGrid" class="episode-grid"></div><p id="upcomingEmpty" class="muted-empty">فعلاً قسمت آینده‌ای ثبت نشده.</p></section>
+<section class="container section" id="latest"><div class="section-title"><div><span class="eyebrow">LATEST EPISODES</span><h2>آخرین قسمت‌ها</h2></div><a class="plain-btn" href="#episodes">مشاهده همه ←</a></div><div id="latestGrid" class="episode-grid"></div></section>
+<section class="container section archive" id="episodes"><div class="section-title"><div><span class="eyebrow">EPISODES</span><h2>آرشیو قسمت‌ها</h2><p class="section-sub">قسمت موردنظر خودت را سریع پیدا کن.</p></div></div>
+ <div class="archive-toolbar"><div class="season-tabs" id="seasonTabs"><button class="active" data-season="all">همه</button><button data-season="7">فصل ۷</button><button data-season="6">فصل ۶</button><button data-season="5">فصل ۵</button><button data-season="special">ویژه</button></div><div class="archive-filters"><div class="mini-search"><span>⌕</span><input id="search" placeholder="جستجوی قسمت..."></div><select id="languageFilter"><option value="all">همه زبان‌ها</option><option value="fa">دوبله فارسی</option><option value="sub">زیرنویس فارسی</option><option value="fr">فرانسوی</option><option value="en">انگلیسی</option></select></div></div>
+ <div id="episodeGrid" class="episode-grid"></div><p id="emptyState" class="muted-empty" hidden>قسمتی با این مشخصات پیدا نشد.</p>
+</section>
+<section class="container section show-section" id="show"><div class="show-card"><div><span class="eyebrow">THE SHOW</span><h2>Miraculous: Tales of Ladybug & Cat Noir</h2><p>داستان دو قهرمان نوجوان پاریسی که با قدرت میراکلس از شهرشان محافظت می‌کنند.</p><a class="outline-btn" href="#news">بیشتر بدانید</a></div><div class="show-stats"><div><b>۷+</b><span>فصل</span></div><div><b>۱۰۰+</b><span>قسمت</span></div><div><b>∞</b><span>ماجرا</span></div></div></div></section>
+<section class="container section news-section" id="news"><div class="section-title"><div><span class="eyebrow">NEWSFLASH</span><h2>آخرین اخبار</h2></div><button class="plain-btn" id="markNews">همه را خواندم</button></div><div id="newsList" class="news-list"></div></section>
+</main>
+<footer><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">77</span><span class="brand-text">MIRACULOUS<span>77</span></span></a><p>آرشیو فارسی میراکلس؛ قسمت‌ها، اخبار و اطلاعات سریال.</p></div><div><h3>کاوش</h3><a href="#home">خانه</a><a href="#episodes">قسمت‌ها</a><a href="#show">سریال</a></div><div><h3>دسترسی سریع</h3><a href="#latest">آخرین قسمت‌ها</a><a href="#upcoming">قسمت‌های آینده</a><a href="#news">اخبار</a></div></div><div class="container footer-bottom"><span>© 2026 Miraculous77</span><span>Made for Miraculous fans</span></div></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
