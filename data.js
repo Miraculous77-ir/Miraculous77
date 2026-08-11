@@ -1,10 +1,13 @@
 // محتوای قسمت‌ها؛ تصاویر واقعی را بعداً در poster قرار بده.
 const EPISODES = [
-  {id:'s6e26',season:6,episode:26,title:'نمسیس',poster:'assets/placeholder.svg',summary:'قسمت ۲۶ فصل ششم',release:'2026-08-08',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e25',season:6,episode:25,title:'پروتکل مخفی',poster:'assets/placeholder.svg',summary:'قسمت ۲۵ فصل ششم',release:'2026-08-01',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e24',season:6,episode:24,title:'ملکه شهر ترس',poster:'assets/placeholder.svg',summary:'قسمت ۲۴ فصل ششم',release:'2026-07-25',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e23',season:6,episode:23,title:'تریستانسی',poster:'assets/placeholder.svg',summary:'قسمت ۲۳ فصل ششم',release:'2026-07-18',languages:['sub'],status:'released',watch:'',downloads:{}},
-{id:'s5e26',season:5,episode:26,title:'Re-Creation',poster:'assets/placeholder.svg',summary:'قسمت پایانی فصل پنجم',release:'2023-11-19',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e6',season:6,episode:6,title:'Sleeping Syren',poster:'assets/placeholder.svg',summary:'قسمت ششم فصل ششم',release:'2026-11-13',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e5',season:6,episode:5,title:'Werepapas',poster:'assets/placeholder.svg',summary:'قسمت پنجم فصل ششم',release:'2026-11-06',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e4',season:6,episode:4,title:'Daddycop',poster:'assets/placeholder.svg',summary:'قسمت چهارم فصل ششم',release:'2026-10-30',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e3',season:6,episode:3,title:'Sublimation',poster:'assets/placeholder.svg',summary:'قسمت سوم فصل ششم',release:'2026-10-23',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e2',season:6,episode:2,title:'The Illustrhater',poster:'assets/placeholder.svg',summary:'قسمت دوم فصل ششم',release:'2026-10-16',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e1',season:6,episode:1,title:'Climatiqueen',poster:'assets/placeholder.svg',summary:'قسمت اول فصل ششم',release:'2026-10-09',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e7',season:6,episode:7,title:'قسمت هفتم فصل ششم',poster:'assets/placeholder.svg',summary:'تاریخ پخش احتمالی این قسمت ۲۹ آبان است.',release:'2026-11-20',languages:['sub'],status:'upcoming',watch:'',downloads:{}},
+  {id:'s5e26',season:5,episode:26,title:'Re-Creation',poster:'assets/placeholder.svg',summary:'قسمت پایانی فصل پنجم',release:'2023-11-19',languages:['sub'],status:'released',watch:'',downloads:{}},
   {id:'s5e25',season:5,episode:25,title:'Conformation',poster:'assets/placeholder.svg',summary:'قسمت ۲۵ فصل پنجم',release:'2023-11-18',languages:['sub'],status:'released',watch:'',downloads:{}},
   {id:'s5e24',season:5,episode:24,title:'Representation',poster:'assets/placeholder.svg',summary:'قسمت ۲۴ فصل پنجم',release:'2023-11-17',languages:['sub'],status:'released',watch:'',downloads:{}},
   {id:'s4e26',season:4,episode:26,title:'Strike Back',poster:'assets/placeholder.svg',summary:'قسمت پایانی فصل چهارم',release:'2021-11-18',languages:['sub'],status:'released',watch:'',downloads:{}},
