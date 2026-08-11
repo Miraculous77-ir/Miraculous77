@@ -1,9 +1,9 @@
 // محتوای قسمت‌ها؛ تصاویر واقعی را بعداً در poster قرار بده.
 const EPISODES = [
-  {id:'s6e26',season:6,episode:26,title:'نمسیس',poster:'images/episodes/s6e26.jpg',summary:'قسمت ۲۶ فصل ششم',release:'2026-08-08',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e25',season:6,episode:25,title:'پروتکل مخفی',poster:'images/episodes/s6e25.jpg',summary:'قسمت ۲۵ فصل ششم',release:'2026-08-01',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e24',season:6,episode:24,title:'ملکه شهر ترس',poster:'images/episodes/s6e24.jpg',summary:'قسمت ۲۴ فصل ششم',release:'2026-07-25',languages:['sub'],status:'released',watch:'',downloads:{}},
-  {id:'s6e23',season:6,episode:23,title:'تریستانسی',poster:'images/episodes/s6e23.jpg',summary:'قسمت ۲۳ فصل ششم',release:'2026-07-18',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e26',season:6,episode:26,title:'نمسیس',poster:'assets/placeholder.svg',summary:'قسمت ۲۶ فصل ششم',release:'2026-08-08',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e25',season:6,episode:25,title:'پروتکل مخفی',poster:'assets/placeholder.svg',summary:'قسمت ۲۵ فصل ششم',release:'2026-08-01',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e24',season:6,episode:24,title:'ملکه شهر ترس',poster:'assets/placeholder.svg',summary:'قسمت ۲۴ فصل ششم',release:'2026-07-25',languages:['sub'],status:'released',watch:'',downloads:{}},
+  {id:'s6e23',season:6,episode:23,title:'تریستانسی',poster:'assets/placeholder.svg',summary:'قسمت ۲۳ فصل ششم',release:'2026-07-18',languages:['sub'],status:'released',watch:'',downloads:{}},
 {id:'s5e26',season:5,episode:26,title:'Re-Creation',poster:'assets/placeholder.svg',summary:'قسمت پایانی فصل پنجم',release:'2023-11-19',languages:['sub'],status:'released',watch:'',downloads:{}},
   {id:'s5e25',season:5,episode:25,title:'Conformation',poster:'assets/placeholder.svg',summary:'قسمت ۲۵ فصل پنجم',release:'2023-11-18',languages:['sub'],status:'released',watch:'',downloads:{}},
   {id:'s5e24',season:5,episode:24,title:'Representation',poster:'assets/placeholder.svg',summary:'قسمت ۲۴ فصل پنجم',release:'2023-11-17',languages:['sub'],status:'released',watch:'',downloads:{}},
