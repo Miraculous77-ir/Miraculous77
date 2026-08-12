@@ -16,6 +16,25 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:var(--surface
 
 
 /* Episode page final enhancements */
-.episode-stats{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 20px}.episode-stat{min-width:86px;padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:var(--surface);display:flex;flex-direction:column;gap:2px;box-shadow:0 5px 16px rgba(17,20,27,.04)}.episode-stat strong{font-size:14px}.episode-stat span{font-size:10px;color:var(--muted)}
 .download-wrap{margin-top:22px}.download-toggle{border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:12px;padding:11px 20px;font:inherit;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 8px 20px rgba(229,43,67,.18);transition:.18s}.download-toggle:hover{transform:translateY(-2px);box-shadow:0 11px 24px rgba(229,43,67,.23)}.download-toggle.open{background:var(--surface);color:var(--accent);box-shadow:none}.download-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:15px;background:var(--surface);box-shadow:0 8px 24px rgba(17,20,27,.05)}.download-card{min-height:68px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--surface2);text-decoration:none;display:flex;flex-direction:column;justify-content:center;gap:3px;transition:.18s}.download-card:hover{border-color:rgba(229,43,67,.4);transform:translateY(-2px)}.download-card strong{font-size:15px;color:var(--text)}.download-card span{font-size:10px;color:var(--muted)}
-@media(max-width:600px){.download-panel{grid-template-columns:1fr}.episode-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.download-panel{grid-template-columns:1fr}}
+
+/* Requested final layout adjustments */
+.brand-logo{width:44px;height:44px;object-fit:contain;display:block}
+.footer-brand .brand-logo{width:40px;height:40px}
+.episode-carousel .episode-card{flex-basis:410px}
+.season-episodes{border-top:1px solid var(--line);margin-top:58px;padding-top:42px}
+.season-episode-list{display:flex;flex-direction:column;gap:10px;max-width:760px}
+.season-episode-item{display:flex;align-items:center;gap:13px;padding:9px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;transition:.18s}
+.season-episode-item:hover{transform:translateY(-1px);box-shadow:var(--shadow);border-color:rgba(229,43,67,.28)}
+.season-episode-item.current{border-color:rgba(229,43,67,.45);box-shadow:0 5px 18px rgba(229,43,67,.07)}
+.season-episode-poster{width:92px;height:58px;flex:0 0 92px;border-radius:9px;overflow:hidden;background:var(--surface2)}
+.season-episode-poster img{width:100%;height:100%;object-fit:cover;display:block}
+.season-episode-info{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.season-episode-info span{font-size:10px;color:var(--accent);font-weight:800}
+.season-episode-info strong{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.season-episode-info small{font-size:10px;color:var(--muted)}
+.season-episode-arrow{font-size:17px;color:var(--muted);padding:0 7px}
+@media(max-width:980px){.episode-carousel .episode-card{flex-basis:360px}}
+@media(max-width:760px){.brand-logo{width:38px;height:38px}.episode-carousel .episode-card{flex-basis:320px}.season-episodes{margin-top:42px;padding-top:32px}.season-episode-poster{width:82px;height:54px;flex-basis:82px}}
+@media(max-width:480px){.episode-carousel .episode-card{flex-basis:280px}.season-episode-item{gap:10px}.season-episode-poster{width:76px;height:52px;flex-basis:76px}.season-episode-info strong{font-size:12px}.season-episode-arrow{padding:0 3px}}
