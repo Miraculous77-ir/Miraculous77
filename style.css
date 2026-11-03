@@ -20,7 +20,7 @@ footer{margin-top:20px;border-top:1px solid var(--line);background:var(--surface
 @media(max-width:600px){.download-panel{grid-template-columns:1fr}}
 
 /* Requested final layout adjustments */
-.brand-logo{width:44px;height:44px;object-fit:contain;display:block}
+.brand-logo{width:44px;height:44px;object-fit:contain;display:block;background:transparent !important;mix-blend-mode:normal;filter:none}
 .footer-brand .brand-logo{width:40px;height:40px}
 .episode-carousel .episode-card{flex-basis:410px}
 .season-episodes{border-top:1px solid var(--line);margin-top:58px;padding-top:42px}
